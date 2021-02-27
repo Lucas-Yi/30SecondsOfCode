@@ -10,8 +10,8 @@
 import '../css/tagInput.css'
 import React, {useState} from "react"
 
-const TagInput = ()=>{
-    const [tagData, setTagData] = useState([])
+const TagInput = ({tags})=>{
+    const [tagData, setTagData] = useState(tags)
     const addTagData=event=>{
         if(event.target.value !== ''){
             setTagData([...tagData, event.target.value])
