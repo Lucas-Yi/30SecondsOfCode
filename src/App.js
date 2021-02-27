@@ -1,6 +1,7 @@
+import "./App.css"
 import TagInput from "./components/TagInput"
 import MultiselectCheckbox from './components/MultiselectCheckbox'
-import "./App.css"
+import LimitedWordTextarea from "./components/LimitedWordTextarea"
 
 function App() {
   // options for MultiselectCheckbox
@@ -15,6 +16,10 @@ function App() {
       <div>
         <p>MultiselectCheckbox:</p>
         <MultiselectCheckbox options={options}/>
+      </div>
+      <div>
+        <p>LimitedWordTextarea:</p>
+        <LimitedWordTextarea limit={5} value="Hello there!" />
       </div>
       
     </div>
