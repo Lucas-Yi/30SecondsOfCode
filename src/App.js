@@ -3,7 +3,7 @@ import TagInput from "./components/TagInput"
 import MultiselectCheckbox from './components/MultiselectCheckbox'
 import LimitedWordTextarea from "./components/LimitedWordTextarea"
 import {Tabs, TabItem} from "./components/Tabs"
-
+import {Accordion, AccordionItem} from "./components/Accordion"
 function App() {
   // options for MultiselectCheckbox
   const options = [{ label: 'Item One' }, { label: 'Item Two' }];
@@ -31,7 +31,18 @@ function App() {
           <TabItem label="B" index="2">
             Dolor sit amet
           </TabItem>
-      </Tabs>
+        </Tabs>
+      </div>
+      <div>
+        <p>Accordion:</p>
+        <Accordion defaultIndex="1">
+          <AccordionItem label="A" index="1">
+            Lorem ipsum
+          </AccordionItem>
+          <AccordionItem label="B" index="2">
+            Dolor sit amet
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );
