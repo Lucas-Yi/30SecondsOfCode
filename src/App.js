@@ -2,6 +2,7 @@ import "./App.css"
 import TagInput from "./components/TagInput"
 import MultiselectCheckbox from './components/MultiselectCheckbox'
 import LimitedWordTextarea from "./components/LimitedWordTextarea"
+import {Tabs, TabItem} from "./components/Tabs"
 
 function App() {
   // options for MultiselectCheckbox
@@ -21,7 +22,17 @@ function App() {
         <p>LimitedWordTextarea:</p>
         <LimitedWordTextarea limit={5} value="Hello there!" />
       </div>
-      
+      <div>
+        <p>Tabs:</p>
+        <Tabs defaultIndex="1">
+          <TabItem label="A" index="1">
+            Lorem ipsum
+          </TabItem>
+          <TabItem label="B" index="2">
+            Dolor sit amet
+          </TabItem>
+      </Tabs>
+      </div>
     </div>
   );
 }

@@ -24,7 +24,7 @@ const LimitedWordTextarea = ({rows, cols, value, limit})=>{
 
     useEffect(()=>{
         setFormattedContent(content)
-    },[])
+    },[content, setFormattedContent])
 
     return (
         <>
