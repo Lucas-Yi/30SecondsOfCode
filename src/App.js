@@ -8,6 +8,8 @@ import StarRating from "./components/StarRating"
 import Select from "./components/Select"
 import Toggle from "./components/Toggle"
 import PasswordRevealer from "./components/PasswordRevealer"
+import Slider from "./components/Silder"
+import React, { useState } from "react"
 
 function App() {
   // options for MultiselectCheckbox Component
@@ -19,6 +21,7 @@ function App() {
     ['coconut', 'Coconut'],
     ['mango', 'Mango'],
   ];
+
 
   return (
     <div className="components">
@@ -75,6 +78,10 @@ function App() {
       <div>
         <p>PasswordRevealer:</p>
         <PasswordRevealer />
+      </div>
+      <div>
+        <p>Slider:</p>
+        <Slider onValueChange={val=>console.log(val)}/>
       </div>
     </div>
   );
