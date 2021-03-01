@@ -4,6 +4,8 @@ import MultiselectCheckbox from './components/MultiselectCheckbox'
 import LimitedWordTextarea from "./components/LimitedWordTextarea"
 import {Tabs, TabItem} from "./components/Tabs"
 import {Accordion, AccordionItem} from "./components/Accordion"
+import StarRating from "./components/StarRating"
+
 function App() {
   // options for MultiselectCheckbox
   const options = [{ label: 'Item One' }, { label: 'Item Two' }];
@@ -43,6 +45,10 @@ function App() {
             Dolor sit amet
           </AccordionItem>
         </Accordion>
+      </div>
+      <div>
+        <p>StarRating:</p>
+        <StarRating value={2} />
       </div>
     </div>
   );
