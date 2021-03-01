@@ -7,6 +7,7 @@ import {Accordion, AccordionItem} from "./components/Accordion"
 import StarRating from "./components/StarRating"
 import Select from "./components/Select"
 import Toggle from "./components/Toggle"
+import PasswordRevealer from "./components/PasswordRevealer"
 
 function App() {
   // options for MultiselectCheckbox Component
@@ -70,6 +71,10 @@ function App() {
       <div>
         <p>Toggle:</p>
         <Toggle />
+      </div>
+      <div>
+        <p>PasswordRevealer:</p>
+        <PasswordRevealer />
       </div>
     </div>
   );
