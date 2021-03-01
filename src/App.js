@@ -5,11 +5,20 @@ import LimitedWordTextarea from "./components/LimitedWordTextarea"
 import {Tabs, TabItem} from "./components/Tabs"
 import {Accordion, AccordionItem} from "./components/Accordion"
 import StarRating from "./components/StarRating"
+import Select from "./components/Select"
+import Toggle from "./components/Toggle"
 
 function App() {
-  // options for MultiselectCheckbox
+  // options for MultiselectCheckbox Component
   const options = [{ label: 'Item One' }, { label: 'Item Two' }];
-  
+  // choices for Select Component
+  const choices = [
+    ['grapefruit', 'Grapefruit'],
+    ['lime', 'Lime'],
+    ['coconut', 'Coconut'],
+    ['mango', 'Mango'],
+  ];
+
   return (
     <div className="components">
       <div>
@@ -49,6 +58,18 @@ function App() {
       <div>
         <p>StarRating:</p>
         <StarRating value={2} />
+      </div>
+      <div>
+        <p>Select:</p>
+        <Select
+          values={choices}
+          selectedValue="lime"
+          onValueChange={val => console.log(val)}
+        />
+      </div>
+      <div>
+        <p>Toggle:</p>
+        <Toggle />
       </div>
     </div>
   );

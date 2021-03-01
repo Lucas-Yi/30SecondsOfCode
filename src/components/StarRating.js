@@ -37,7 +37,6 @@ const StarRating = ({value})=>{
             </span>
         </div>
     )
-
 }
 
 export default StarRating

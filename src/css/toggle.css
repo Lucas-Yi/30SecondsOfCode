@@ -1,0 +1,11 @@
+.toggle-on {
+    background-color: green;
+}
+
+.toggle-off {
+    background-color: red;
+}
+
+.toggle input[type="checkbox"] {
+    display: none;
+  }
